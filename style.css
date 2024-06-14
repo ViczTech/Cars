@@ -1,0 +1,296 @@
+body{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.homepage{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./img/36953-Lykan-HyperSport-supercar-W-Motors-sports-car-speed-red.4k.jpeg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  max-width: 2560px;
+  margin: 0 auto;
+  text-align: center;
+}
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 0 20px;
+  max-height: 80px;
+}
+.nav-icon img{
+  width: 100px;
+
+}
+.nav-items{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.nav-items li{
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+  gap: 50px;
+}
+.nav-items li:hover{
+  color: red;
+  transition: 1s ease;
+  cursor: pointer;
+}
+ul button.sign-up{
+  background-color: red;
+  border: 2px solid red;
+}
+ul button.sign-up:hover{
+  background-color: transparent;
+  color: red;
+}
+.btn button{
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  margin: 0 10px;
+}
+.btn button:hover{
+  background-color: red;
+  border: 2px solid red;
+  transition: 1s ease;
+}
+.nav-bar i{
+  color: red;
+  display: none;
+}
+.homepage h1{
+  color: white;
+  font-size: 45px;
+}
+.homepage h1 span{
+    background: linear-gradient(90deg, red, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.homepage h3{
+  color: white;
+  font-size: 25px;
+}
+.extra{
+  width: 80vw;
+  max-height: 120px;
+  max-width: 1440px;
+  background-color: black;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px black;
+  padding: 20px;
+  margin-top: 35%;
+}
+.tabs{
+  max-height: 50%;
+  width: auto;
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.tabs p{
+  margin: 0;
+  font-weight: 600;
+  color: white;
+}
+.tabs p:hover{
+  color: red;
+  transition: 1s ease;
+}
+.info{
+  margin: 5px 0;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+.info p{
+  font-size: 12px;
+  color: black;
+}
+.info i{
+  color: red;
+}
+.more{
+  height: 50%;
+  width: 200px;
+  background-color: black;
+  text-align: center;
+  border-radius: 20px;
+  border: 3px solid white;
+  color: white;
+  font-weight: 600;
+}
+.more:hover{
+  color: black;
+  background-color: white;
+  border: 3px solid white;
+  transition: 1s ease; 
+}
+
+
+@media screen and (max-width:1440px) {
+  .homepage{
+    height: 100vh;
+    background-image: url(./img/bugatti-chiron-sport-hypercar-4k-red-wallpaper.1440.jpg);
+  }
+  .extra{
+    margin-top: 45vh;
+    max-height: 150px;
+    min-width: auto;
+    padding: 5px;
+  }
+  .tabs{
+    min-width: auto;
+    padding: auto;
+    border-radius: auto;
+  }
+  .tabs p{
+    font-size: 14px;
+  }
+  .info{
+    padding: 5px;
+    border-radius: auto;
+  }
+  .more{
+    height: 50px;
+    width: auto;
+    border: 2px solid white;
+    font-size: 14px;
+    padding: 0px 15px;
+  }
+}
+
+
+@media screen and (max-width:1024px) {
+  .homepage{
+    background-image: url(./img/R.1024.jpeg);
+    height: 600px;
+  }
+  .homepage h1{
+    font-size: 35px;
+  }
+  .homepage h3{
+    font-size: 15px;
+  }
+  .extra{
+    width: 90vw;
+    max-height: 150px;
+    min-width: auto;
+    padding: 10px;
+    margin-top: 35%;
+  }
+}
+
+@media screen and (max-width:940px) {
+  .homepage{
+    background-image: url(./img/299982.webp);
+    height: 600px;
+  }
+  .extra{
+    margin-top: 35%;
+    max-height: 180px;
+  }
+}
+
+@media screen and (max-width:860px) {
+  .homepage{
+    height: 100vh;
+    background-image: url(./img/299982.webp);
+  }
+  .display{
+    display: flex;
+  }
+.nav-items{
+  width: 100vw;
+  background: rgb(0, 0, 0);
+  padding: 40px 10px;
+  position: absolute;
+  top: 62px;
+  left: 0px;
+  flex-direction: column;
+  display: none;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 2px 10px 15px rgba(94, 1, 1, 0.911);
+}
+.nav-items li{
+  border-bottom: 2px solid white;
+  min-width: 200px;
+}
+.btn{
+  display: flex;
+  flex-direction: column;
+}
+.btn button{
+  margin: 10px 0;
+  padding: 10px 60px;
+}
+.nav-bar i{
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.extra{
+  max-height: 180px;
+  max-width: 550px;
+  margin-top: 30%;
+}
+
+.homepage h1{
+  font-size: 35px;
+}
+.homepage h3{
+  font-size: 18px;
+}
+
+}
+@media screen and (max-width:770px) {
+  .homepage{
+    height: 100vh;
+  }
+  .extra{
+    margin-top: 20vh;
+    max-width: 550px;
+  }
+}
+@media screen and (max-width:600px) {
+  .homepage{
+    height: 100vh;
+    background-image: url(./img/a673a03d632925ac76e7f71bc0c5bc06.jpg);
+  }
+  .extra{
+    max-width: 300px;
+    max-height: 650px;
+    margin-top: 55vh;
+  }
+  .tabs{
+    min-width: 200px;
+    padding: 10px;
+  }
+  .more{
+    height: 45px;
+    margin: 10px 0px;
+    padding: 0px 45px;
+  }
+}
